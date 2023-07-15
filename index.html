@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Bookmark landing page</title>
+
+  <link rel="stylesheet" href="./css.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+    <nav class="navbar">
+      <!-- logo -->
+      <div class="logo"><img src="./images/logo-bookmark.svg" alt=""></div>
+
+      <!-- li icon-hamburger -->
+
+      <div class="hambu">
+        <img onclick="hambuger()" id="ham" src="./images/icon-hamburger.svg" alt="">
+        <img onclick="merhaba()" id="col" class="close" src="./images/icon-close.svg" alt="">
+      </div>
+
+      <!-- li normal -->
+      <div class="list">
+        <ul>
+          <li><a href="">Features</a></li>
+          <li><a href=""> Pricing</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+        <form action="#">
+          <button class="mobil-bottom">Login</button>
+        </form>
+      </div>
+    </nav>
+  </div>
+
+  <!--  -->
+  <!--  -->
+
+  <div class="li-hambuger" id="lista">
+    <div class="cont">
+      <hr>
+      <ul>
+
+        <li class="mobil-li"><a href="">Features</a></li>
+        <hr>
+        <li class="mobil-li"><a href=""> Pricing</a></li>
+        <hr>
+        <li class="mobil-li"><a href="">Contact</a></li>
+        <hr>
+      </ul>
+      <form action="#">
+        <button class="mobil-bottom">Login</button>
+      </form>
+      <div class="iconss">
+
+        <img src="./images/icon-facebook.svg" alt="">
+        <img src="./images/icon-twitter.svg" alt="">
+      </div>
+    </div>
+  </div>
+  <!-- 
+      
+    -->
+  <div class="my-body">
+    <div class="pad">
+      <h2>
+        A Simple Bookmark Manager
+      </h2>
+      <p>
+        A clean and simple interface to organize your favourite websites. Open a new
+        browser tab and see your sites load instantly. Try it for free.
+      </p>
+      <form action="">
+        <button class="button1">
+          Get it on Chrome
+        </button>
+        <button class="button2">
+          Get it on Firefox
+        </button>
+      </form>
+    </div>
+    <div class="img1">
+      <img src="./images/illustration-hero.svg" alt="">
+    </div>
+  </div>
+  <!--  -->
+  <!--  -->
+  <div class="featur ">
+    <div class="for-gred">
+      <h1>
+        Features
+      </h1>
+      <p>
+        Our aim is to make it quick and easy for you to access your favourite websites.
+        Your bookmarks sync between your devices so you can access them on the go.
+      </p>
+      <div class="after">
+        <ul>
+          <li class="border" onclick="one()"> Simple Bookmarking</li>
+          <li onclick="tow()">Speedy Searching</li>
+          <li onclick="three()"> Easy Sharing</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!--  -->
+  <!--  -->
+  <div class="Pricing ">
+    <div class="pric1" id="ferst">
+      <div class="img-pric1">
+        <img src="./images/illustration-features-tab-1.svg" alt="">
+      </div>
+      <div class="paragrafs">
+        <h1>
+          Bookmark in one click
+        </h1>
+        <p>
+          Organize your bookmarks however you like. Our simple drag-and-drop interface
+          gives you complete control over how you manage your favourite sites.
+        </p>
+        <form action="">
+          <button> More Info</button>
+        </form>
+      </div>
+    </div>
+
+
+
+    <div class="pric1 " id="secund" style="display: none;">
+      <div class="img-pric1">
+        <img src="./images/illustration-features-tab-2.svg" alt="">
+      </div>
+      <div class="paragrafs">
+        <h1>
+          Intelligent search
+        </h1>
+        <p>
+          Our powerful search feature will help you find saved sites in no time at all.
+          No need to trawl through all of your bookmarks.
+        </p>
+        <form action="#">
+          <button> More Info</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="pric1" id="third" style="display: none;">
+      <div class="img-pric1">
+        <img src="./images/illustration-features-tab-3.svg" alt="">
+      </div>
+      <div class="paragrafs">
+        <h1>
+          Share your bookmarks
+        </h1>
+        <p>
+          Easily share your bookmarks and collections with others. Create a shareable
+          link that you can send at the click of a button.
+        </p>
+        <form action="#">
+          <button> More Info</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!--  -->
+  <!--  -->
+  <!--  -->
+  <div class="bombayarak">
+    <div class="big">
+      <h1>
+        Download the extension
+      </h1>
+      <p>
+        We’ve got more browsers in the pipeline. Please do let us know if you’ve
+        got a favourite you’d like us to prioritize.
+      </p>
+    </div>
+    <div class="cards">
+      <div class="ferst card">
+        <img src="./images/logo-chrome.svg" alt="">
+        <h1> Add to Chrome</h1>
+        <p> Minimum version 62</p>
+        <img class="wid" src="./images/bg-dots.svg" alt="">
+        <form action="">
+          <button>Add & Install Extension</button>
+        </form>
+      </div>
+      <div class="second card">
+        <img src="./images/logo-firefox.svg" alt="">
+        <h1> Add to Firefox</h1>
+        <p> Minimum version 55</p>
+        <img class="wid" src="./images/bg-dots.svg" alt="">
+        <form action="">
+          <button>Add & Install Extension</button>
+        </form>
+      </div>
+      <div class="third card">
+        <img src="./images/logo-opera.svg" alt="">
+        <h1> Add to Opera</h1>
+        <p> Minimum version 46</p>
+        <img class="wid" src="./images/bg-dots.svg" alt="">
+        <form action="">
+          <button>Add & Install Extension</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!--  -->
+  <!--  -->
+
+  <div class="frequen">
+    <div class="">
+      <div class="parag">
+        <h1>
+          Frequently Asked Questions
+        </h1>
+        <p>
+          Here are some of our FAQs. If you have any other questions you’d like
+          answered please feel free to email us.
+        </p>
+      </div>
+
+
+
+
+      <div class="Question1">
+        <hr>
+        <div class="quastion" onclick="quastion1()">
+          <h1>
+            What is Bookmark?
+          </h1>
+          <div>
+            <img id="img1" src="./images/icon-arrow.svg" alt="">
+          </div>
+        </div>
+        <p id="parag11" class="none">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
+          justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+          ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+        </p>
+      </div>
+      <div class="Question1">
+        <hr>
+        <div class="quastion" onclick="quastion2()">
+          <h1>
+            How can I request a new browser?
+          </h1>
+          <div>
+            <img id="img2" src="./images/icon-arrow.svg" alt="">
+          </div>
+        </div>
+        <p class="none" id="parag22">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
+          justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+          ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+        </p>
+      </div>
+      <div class="Question1">
+        <hr>
+        <div class="quastion" onclick="quastion3()">
+          <h1>
+            Is there a mobile app? </h1>
+          <div>
+            <img id="img3" src="./images/icon-arrow.svg" alt="">
+          </div>
+        </div>
+        <p class="none" id="parag33">
+          Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum
+          urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed
+          sollicitudin ex et ultricies bibendum.
+        </p>
+      </div>
+      <div class="Question1">
+        <hr>
+        <div class="quastion" onclick="quastion4()">
+          <h1>
+            What about other Chromium browsers? </h1>
+          <div>
+            <img id="img4" src="./images/icon-arrow.svg" alt="">
+          </div>
+        </div>
+        <p class="none" id="parag44">
+          Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam
+          vitae neque eget nisl gravida pellentesque non ut velit.
+        </p>
+        <hr>
+      </div>
+
+
+
+      <form action="">
+        <button>More Info</button>
+      </form>
+    </div>
+  </div>
+  <!--  -->
+  <!--  -->
+  <div class="foter-color">
+
+    <div class="ofter">
+      <div>
+        <p>
+          35,000+ already joined
+        </p>
+        <h1>
+          Stay up-to-date with what we’re doing
+        </h1>
+        <div class="form">
+          <form action="">
+            <input id="merhaba" onclick="marbaba()" type="email" placeholder="Enter you email address">
+            <button>Contact Us</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  -->
+  <!--  -->
+  <div class="color">
+    <div class="cont">
+
+      <div class="par">
+
+        <img src="./images/logo-bookmark.svg" alt="">
+        <ul>
+          <li>Features</li>
+          <li>Pricing</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div class="imogi">
+        <img src="./images/icon-facebook.svg" alt="">
+        <img src="./images/icon-twitter.svg" alt="">
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <script src="./index.js"></script>
+</body>
+
+</html>

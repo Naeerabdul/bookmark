@@ -1,0 +1,744 @@
+*{
+padding: 0px;
+margin: 0px;
+
+font-family: 'Rubik', sans-serif;
+font-size: 18px
+}
+.container{
+    width: 85%;
+    margin: auto;
+}
+
+/* navbar start */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 0.5rem;
+}
+.list{
+    display: flex;
+    align-items: center;
+}
+.list ul li{
+    display: inline-block;
+    list-style-type: none;
+    padding:0 1rem ;
+}
+.list ul li a{
+ color: black;
+    text-decoration: none;
+}
+.list ul li a:hover{
+    color: hsl(0, 94%, 66%)
+}
+.list form button{
+    border:  hsl(0, 94%, 66%) 2px solid;
+    background-color: hsl(0, 94%, 66%);
+    color: white;
+    padding:8px 20px;
+    border-radius: 5px;
+    margin:0 1rem ;
+}
+.list form button:hover{
+      background-color: white;
+    color: hsl(0, 94%, 66%);  
+}
+.hambu{
+    display: none;
+}
+/* navbar end */
+/* my-body start */
+.my-body{
+
+   align-items: center;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 1.5rem;
+   margin: 5rem 0px;
+}
+.my-body .img1 {
+    padding-right: 50px;
+    position: relative;
+    overflow: hidden;
+}
+.my-body .img1 img {
+    width: 100%;
+    height: auto;
+    z-index: 3;
+    position: relative;
+
+}
+.my-body .img1::after{
+    content: "";
+    position: absolute;
+    width: 150%;
+    height: 70%;
+    background-color: hsl(231, 69%, 60%);
+    border-top-left-radius:100vw;
+    border-bottom-left-radius: 100vw;
+    top: 30%;
+    z-index: 1;
+    left: 40%;
+}
+.my-body h2{
+    font-size: 2rem;
+    letter-spacing: 1px;
+    color: rgb(26, 25, 25);
+ 
+}
+.my-body p {
+    margin-top: 1rem;
+    overflow: unset;
+    color: gray;
+}
+.my-body form .button1{
+    border:  hsl(231, 69%, 60%) 2px solid;
+    background-color:  hsl(231, 69%, 60%);
+    color: white;
+    padding:10px 20px;
+    border-radius: 5px;
+margin:2rem 1rem 2rem 0rem ;
+}
+.my-body form .button2{
+    border: hsl(229, 8%, 60%) 2px solid;
+    background-color:  hsl(229, 8%, 60%);
+    color: white;
+    padding:10px 20px;
+    border-radius: 5px;
+
+}
+.my-body form .button2:hover{
+    background-color: white;
+    color: hsl(229, 8%, 60%);
+}
+.my-body form .button1:hover{
+    background-color: white;
+    color: hsl(231, 69%, 60%);
+}
+.my-body .pad{
+    padding-left:15% ;
+    padding-top: 2rem;
+}
+/* my-body end */
+/* featur start */
+.featur{
+    margin: 3rem 0px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat( 7,1fr);
+}
+.featur h1{
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.featur p{
+    width: 70%;
+    margin:2rem auto;
+    color: gray;
+  
+}
+.featur ul li{
+    list-style-type: none;
+    
+    padding-bottom:  2rem  ;
+    color: rgba(0, 0, 0, 0.625);
+}
+.featur ul li:hover{
+    color: red;
+     border-bottom: solid red 3px;
+}
+.featur .after .border:hover{
+    border-bottom: solid red 3px;
+    border-width: 50%;
+}
+    .featur .after .border{
+    position: relative;
+    z-index: 3;
+}
+.featur .after::after{
+    content: "";
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: auto;
+    height: 3px;
+    background-color: rgba(0, 0, 0, 0.486);
+    z-index: 1;
+}
+.featur .for-gred{
+    grid-column: 3/6;
+}
+.featur ul {
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+}
+/* featur end */
+/*  */
+.pric1{
+    align-items: start;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    margin: 4rem 0px;
+}
+.img-pric1 {
+    padding-left: 50px;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 5rem;
+}
+.img-pric1 img {
+    width: 80%;
+    height: auto;
+    z-index: 3;
+    position: relative;
+    left: 20%;
+}
+.img-pric1::after{
+    content: "";
+    position: absolute;
+    width:160%;
+    height: 80%;
+    background-color: hsl(231, 69%, 60%);
+    border-top-right-radius:100vw;
+    border-bottom-right-radius: 100vw;
+    bottom: 0;
+    z-index: 1;
+    right: 10%;
+}
+
+.paragrafs{
+    margin-left: 2rem;
+}
+
+.paragrafs h1{
+font-size: 2rem;
+margin: 3rem 0rem;
+font-weight: 500;
+}
+.paragrafs p{
+width: 80%;
+margin: 2rem 0rem;
+font-weight: 400;
+color: rgba(0, 0, 0, 0.57);
+}
+.paragrafs button{
+    border:  hsl(231, 69%, 60%) 2px solid;
+    background-color:  hsl(231, 69%, 60%);
+    color: white;
+    padding:10px 20px;
+    border-radius: 5px;
+
+}
+.paragrafs button:hover{
+    background-color: white;
+color: hsl(231, 69%, 60%);
+}
+
+
+
+.none{
+    display: none;
+}
+
+.block{
+    display: grid;
+}
+
+
+
+
+/*  */
+
+
+
+
+
+
+/*  */
+.bombayarak{
+    padding: 3rem 0rem;
+width: 70%;
+margin: auto;
+}
+.bombayarak h1{
+font-size: 2rem;
+margin: 1rem 0rem;
+font-weight: 500;
+text-align: center;
+}
+.bombayarak p{
+text-align: center;
+width: 60%;
+margin: auto;
+font-weight: 400;
+color: rgba(0, 0, 0, 0.57);
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    text-align: center;
+
+}
+.cards .card{
+    margin: 2rem 0;
+    padding: 1rem;
+     box-shadow: 0px 20px 20px 0px rgb(224, 234, 236);
+     border-radius:5px;
+}
+.cards .card h1{
+    font-size: 20px;
+}
+.cards .card p{
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.504);    
+}
+.cards .card button:hover{
+    background-color: white;
+    color: hsl(231, 69%, 60%);
+}
+.cards .card button{
+    border:  hsl(231, 69%, 60%) 2px solid;
+    background-color:  hsl(231, 69%, 60%);
+    color: white;
+    width: 90%;
+    padding:10px 20px;
+    border-radius: 5px;
+margin:2rem 1rem 2rem 0rem ;
+}
+.cards .second {
+    margin: 3rem;
+}
+.cards .third{
+    margin-top:4rem ;
+}
+
+/*  */
+
+
+.frequen{
+      padding: 5rem 0rem;
+margin: auto;
+text-align: center;
+width: 50%;
+}
+.parag h1{
+    font-size: 2rem;;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+            word-spacing: 3px;
+}
+.parag p{
+        font-size: 16px;
+    color: rgba(0, 0, 0, 0.504);   
+         margin-bottom: 3rem;
+
+}
+
+.quastion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0rem 1rem 0rem ;
+}
+.Question1 p{
+            font-size: 16px;
+    color: rgba(0, 0, 0, 0.504);   
+        margin: 2rem 0rem;
+        
+}
+.quastion h1{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.quastion:hover{
+    color: red;
+}
+.frequen button:hover{
+    background-color: white;
+    color: hsl(231, 69%, 60%);
+}
+.frequen button{
+    border:  hsl(231, 69%, 60%) 2px solid;
+    background-color:  hsl(231, 69%, 60%);
+    color: white;
+    padding:10px 20px;
+    border-radius: 5px;
+    margin-top: 1.5rem;
+    margin-bottom: 5rem;
+}
+
+.trans{
+    transform:rotate(180deg);
+}
+.none{
+    display: none;
+}
+/*  */
+/*  */
+/*  */
+.foter-color{
+    background-color: hsl(231, 69%, 60%);
+    
+}
+.ofter{
+margin: auto;
+text-align: center;
+width: 65%; 
+
+
+}
+.ofter .form button{
+    border:  hsl(0, 94%, 66%) 2px solid;
+    background-color: hsl(0, 94%, 66%);
+    color: white;
+    padding:12px 20px;
+    border-radius: 5px;
+}
+.ofter .form button:hover{
+    background-color: #fff;
+      color: hsl(0, 94%, 66%);
+}
+.ofter .form input{
+    outline: none;
+        border:none;
+          border:  #fff 2px solid;
+    background-color: #fff;
+    color: rgb(23, 20, 20);
+    padding:12px 16px 12px 0px;
+    border-radius: 5px;
+    width: 20vw;
+
+}
+.ofter p{ 
+    font-weight: 100;
+    letter-spacing: 5px;
+    word-spacing: 5px;
+    padding: 5rem 0 0 0 ;
+    color: #fff;
+}
+.ofter h1{ 
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 3px;
+    font-size: 2.5rem;
+    padding: 3rem 0 2rem 0 ;
+}
+.ofter .form {
+    padding-bottom:5rem ;
+}
+
+/* 
+ */
+
+.color{
+    background-color: rgb(32, 37, 57)
+    ;
+}
+.cont{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 0rem;
+}
+.par{
+    display: flex;
+    align-items: flex-end;
+   
+}
+.par ul li{
+     color: #ffffffc2;
+    display: inline-block;
+    padding-left: 3rem;
+    font-weight: 100;
+list-style-type: none;
+}
+.imogi img {
+    padding: 0rem 1.5rem;
+    max-width: 1100px;
+}
+p{
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+li{
+    letter-spacing: 1px;
+}
+h1{
+    font-size: 2rem;
+
+}
+.li-hambuger{
+    display: none;
+}
+
+@media ( max-width:950px) {
+    .my-body form .button1 {
+    margin: 2rem  0rem ;
+}
+.featur .for-gred {
+    grid-column: 2/7;
+}
+.img-pric1 img {
+    width: 90%;
+    left: 10%;
+}
+.img-pric1::after {
+    height: 68%;
+    top: 20%;
+}
+.paragrafs h1 {
+margin: 1rem 0rem;
+
+}.cards .second {
+    margin: 3rem 1rem;
+}
+.cards .card button {
+    padding: 10px 10px;
+    margin: 2rem 0rem ;}
+.cards .card {
+    margin:1rem auto;
+    width: 50%;}
+    .cards{
+        display: block;
+    }
+    .bombayarak{
+        width: 80%;
+    }
+    .par ul li {
+        padding-left: 1rem;
+    }
+    .quastion h1 {
+text-align: start;}
+}
+@media ( max-width:450px) {
+.hambu{
+    display: block;
+    
+}
+.my-body {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+}
+.my-body .pad {
+    grid-row: 2/3;
+    padding-left:0rem ;
+    text-align: center;
+}
+.my-body .img1{
+    padding: 0;
+}
+.my-body form .button1{
+    padding: 10px;
+}
+.my-body form .button2{
+    padding: 10px;
+}
+.featur{
+display: block;
+width: 95%;
+margin: auto;
+}
+.featur p{
+    width: 95%;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+.featur ul{
+    display: block;
+
+}
+.featur ul li::after{
+    content: "";
+    display: block;
+    position: relative;
+    width: 90%;
+    margin: auto;
+    height: 1px;
+    top: 1.1rem;
+    background-color: rgba(0, 0, 0, 0.486);
+    z-index: 1;
+}
+.featur .after::after{
+bottom: 10rem;
+width: 80%;
+ height: 1px;
+}
+.featur ul li{
+    padding: 1rem;
+}
+.pric1{
+    grid-template-columns: 1fr;
+
+}
+.featur ul li:hover{
+    width: 70%;
+    margin: auto;
+}
+.paragrafs button{
+    display: none;
+}
+.paragrafs h1{
+    text-align: center;
+}
+
+.paragrafs {
+  width: 90%;
+    margin: auto;
+}
+.paragrafs p{
+    width: 95%;
+    margin: auto;
+    text-align: center;
+}
+.bombayarak{
+    width: 95%;
+}
+.bombayarak p {
+        width: 95%;
+        margin-bottom: 2rem;
+}
+.bombayarak h1{
+   font-size: 1.5rem;
+
+}
+.cards .card{
+ width: 75%;
+ margin: 2rem auto;
+}
+.cards .card button {
+    padding: 20px 10px;
+    margin: 1rem 0rem ;}
+.frequen{
+    width: 80%;
+}
+.parag h1{
+    font-size: 1.5rem;
+}
+.quastion h1{
+    font-size: 0.8rem;
+}
+.frequen button{
+    margin-top: 2.5rem;
+    margin-bottom: 3rem;
+}
+.ofter{
+    width: 90%;
+}
+.ofter p{
+    font-size: 12px;
+    padding-top: 3rem;
+}
+.ofter h1{
+    font-size: 1.3rem;
+}
+.ofter .form input{
+    display: block;
+    width: 80%;
+    margin:1rem auto;
+}
+.ofter .form button{
+    width: 85%;
+    margin: auto;
+}
+.wid{
+    width: 95%;
+    margin: auto;
+}
+.cont{
+    display: block;
+    text-align: center;
+}
+.par{
+    display: block;
+}
+.par ul li{
+    display: block;
+    margin: 1rem 0rem;
+}
+.imogi img{
+    padding:1rem 0.5rem;
+}
+
+
+
+
+
+
+
+/*  */
+.close{
+ display: none;
+ position: relative;
+ z-index: 10;
+ 
+}
+.list{
+    display: none;
+
+}
+.li-hambuger{
+    display: none;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    background-color: rgba(10, 15, 21, 0.848);
+    position: absolute;
+    z-index: 5;
+    height: 100%;
+    bottom:1rem;
+}
+.li-hambuger .cont{
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.mobil-li {
+    list-style-type: none;
+    margin: 1.5rem auto;
+    width: 90%;
+}
+.mobil-li a{
+color: #fff;
+text-decoration: none;
+font-size: 25px;
+letter-spacing: 2px;
+}
+.mobil-bottom{
+    border:  hsl(0, 0%, 100%) 4px solid;
+    background-color:  hsl(0, 12%, 10%);
+    color: white;
+    padding:10px 20px;
+    border-radius: 5px;
+    width: 90%;
+margin:1.5rem  0rem ;
+}
+.iconss img{
+    /* margin-top: 10rem;
+    padding: 1rem; */
+    position: absolute;
+    bottom: 10vh;
+}
+.iconss img:first-child{
+    left: 40%
+}
+.iconss img:last-child{
+    right: 40%
+}
+.img-pric1 img{
+    left: 0%;
+}
+.none{
+    display: none;
+}
+.block{
+    display: block;
+}
+}
+
+
